@@ -1,2 +1,11 @@
-# IM聊天功能～
-`go` `websocket`
+# IM聊天功能
+`go` `websocket` `kafka` `redis` `mysql`
+### 负责消息路由以及离线消息缓存
+- 服务端不进行云端消息存储，只做消息中转，登录验证和用户离线消息缓存。
+
+### 分布式系统中实现ws连接的获取
+- redis:
+  - 存储userId与服务器信息的映射
+- kafka:
+  - 每个服务器的消息发送到对应的partition
+  - 服务端只需要订阅自己对应的partition获取消息

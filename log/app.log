@@ -1,0 +1,1 @@
+2025-08-17T17:40:31.474|error|controller/init_controller.go:17|msg=[WS] run server error, err=%!(EXTRA *net.OpError=listen tcp 0.0.0.0:50011: bind: address already in use)
