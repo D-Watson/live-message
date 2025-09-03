@@ -7,5 +7,5 @@
 - redis:
   - 存储userId与服务器信息的映射
 - kafka:
-  - 每个服务器的消息发送到对应的partition
-  - 服务端只需要订阅自己对应的partition获取消息
+  - 每个服务器的消息发送到对应的topic
+  - 服务端只需要订阅自己对应的topic获取消息
